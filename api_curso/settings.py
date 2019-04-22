@@ -25,7 +25,7 @@ SECRET_KEY = '2t(e9roefh#)ow(r=g%0mp+2yu6rqh)j^tvv3g2*0!_nn!l@xh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['pedromarquex.pythonanywhere.com', '*']
 
 
 # Application definition
@@ -128,6 +128,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+MEDIA_URL = '/media/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # CORS configs
 
